@@ -7,21 +7,56 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1 id="dom">Hello</h1>
+    <h1 id="dom2">Hello</h1>
+    <h1 id="dom3">Hello</h1>
+    <h1 id="dom4">Hello</h1>
     <p id="message"></p>
 </body>
 <script> 
     //String
-    let name = 'hello world'
+    let name = 'Hello world'
     let long = name.length 
+    let charat = name.charAt(6)
     let upper = name.toUpperCase()
     let lower = name.toLowerCase()
+    let count = name.substring(0,5)
     console.log(upper)
     console.log(lower)
     console.log(long)
-    let count = name.substring(0,5)
-    console.log(name.replace('l','r'))
     console.log(count)
+    console.log(name[7])
+    console.log('Caracter number is: ' + charat)
+    console.log('Caracter Type is: ' + typeof charat)
+
+    //Quiz
+    let str = 'hello JS'
+    let upperStr = str.toUpperCase()
+    let replaceO = upperStr.replace('O','Y')
+    let reverseStr = replaceO.split('').reverse().join('')
+    console.log('======= Reponse ===========')
+    console.log(str)
+    console.log(upperStr)
+    console.log(replaceO)
+    console.log(reverseStr)
+    console.log('===========================')
+
+    // Quiz 2
+    let cStr = document.getElementById('dom').innerHTML = str
+    let cStr2 = document.getElementById('dom2').innerHTML = upperStr
+    let cStr3 = document.getElementById('dom3').innerHTML = replaceO
+    let cStr4 = document.getElementById('dom4').innerHTML = reverseStr
+    console.log(cStr)
+    console.log(cStr2)
+    console.log(cStr3)
+    console.log(cStr4)
+
+    let replaceHello = name.toLowerCase()
+    console.log(name.replace('l','r'))
+    console.log(replaceHello)
+    console.log(name.replace('hello','HELLO'))
+    
+    //Variables
     let first = 10
     let second = 4
     let message = `First number is : ${first} \n Second number is : ${second}
