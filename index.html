@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="dom">Hello</h1>
-    <h1 id="dom2">Hello</h1>
-    <h1 id="dom3">Hello</h1>
-    <h1 id="dom4">Hello</h1>
+    <h1 id="dom"></h1>
+    <h1 id="dom2"></h1>
+    <h1 id="dom3"></h1>
+    <input type="text" placeholder="Enter some thing" id="input">
+    <button id = 'submit'>Submit</button>
     <p id="message"></p>
 </body>
 <script> 
@@ -29,7 +30,7 @@
     console.log('Caracter number is: ' + charat)
     console.log('Caracter Type is: ' + typeof charat)
 
-    //Quiz
+    //======================Quiz
     let str = 'hello JS'
     let upperStr = str.toUpperCase()
     let replaceO = upperStr.replace('O','Y')
@@ -40,16 +41,30 @@
     console.log(replaceO)
     console.log(reverseStr)
     console.log('===========================')
-
-    // Quiz 2
+/* 
+    //============================= Quiz 2
     let cStr = document.getElementById('dom').innerHTML = str
-    let cStr2 = document.getElementById('dom2').innerHTML = upperStr
-    let cStr3 = document.getElementById('dom3').innerHTML = replaceO
-    let cStr4 = document.getElementById('dom4').innerHTML = reverseStr
+    let cStr2 = document.getElementById('dom2').innerHTML = `${upperStr} ---- ${replaceO} ------ ${reverseStr}`
+    console.log('======= Reponse 2 =========')
     console.log(cStr)
     console.log(cStr2)
-    console.log(cStr3)
-    console.log(cStr4)
+    console.log('===========================') */
+
+    //================================== Quiz 3 
+    console.log('======== Reponse 3 ============')
+    let btn_submit = document.getElementById('submit').addEventListener('click', ()=>{
+        let inputInfo = document.getElementById('input').value
+        console.log(input.value)
+        let upperStr1 = inputInfo.toUpperCase()
+        let replaceO2 = upperStr1.replace('O','Yes')
+        let reverseStr3 = replaceO2.split('').reverse().join('')
+        console.log('clicked')
+        document.getElementById('dom').innerHTML = input.value
+        document.getElementById('dom3').innerHTML = `${upperStr1} ---- ${replaceO2} ------ ${reverseStr3}`
+    
+    })
+
+    console.log('===============================')
 
     let replaceHello = name.toLowerCase()
     console.log(name.replace('l','r'))
