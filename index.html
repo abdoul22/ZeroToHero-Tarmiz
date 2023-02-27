@@ -7,16 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hello</h1>
+    <h1>Hello</h1>
+    <p id="message"></p>
 </body>
-<script>
+<script> 
+    //String
+    let name = 'hello world'
+    let long = name.length 
+    let upper = name.toUpperCase()
+    let lower = name.toLowerCase()
+    console.log(upper)
+    console.log(lower)
+    console.log(long)
+    let count = name.substring(0,5)
+    console.log(name.replace('l','r'))
+    console.log(count)
     let first = 10
     let second = 4
     let message = `First number is : ${first} \n Second number is : ${second}
-     Sum is ${first+second}\n Sum is ${first-second}\n 
+     Sum is ${first+second}\n Sub is ${first-second}\n 
      Multiple is ${first*second}\n 
      Div is ${first/second}\n Modulo is ${first%second}\n  `
-     
+    document.getElementById('message').innerHTML = message
     let sum = ()=>  console.log('Sum is '+ (first + second))
     let divi = ()=> console.log('Div is: '+first/second)
     let multipl = ()=> console.log('Multi is : '+first*second)
