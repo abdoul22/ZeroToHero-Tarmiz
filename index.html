@@ -30,7 +30,7 @@
     console.log('Caracter number is: ' + charat)
     console.log('Caracter Type is: ' + typeof charat)
 
-    //======================Quiz
+    //====================== Quiz
     let str = 'hello JS'
     let upperStr = str.toUpperCase()
     let replaceO = upperStr.replace('O','Y')
@@ -54,7 +54,7 @@
     console.log('======== Reponse 3 ============')
     let btn_submit = document.getElementById('submit').addEventListener('click', ()=>{
         let inputInfo = document.getElementById('input').value
-        console.log(input.value)
+        console.log(inputInfo)
         let upperStr1 = inputInfo.toUpperCase()
         let replaceO2 = upperStr1.replace('O','Yes')
         let reverseStr3 = replaceO2.split('').reverse().join('')
@@ -71,6 +71,41 @@
     console.log(replaceHello)
     console.log(name.replace('hello','HELLO'))
     
+    // Numbers 
+    let x = "10"
+    let y = "20"
+    let z = x + y
+    let w = x * y
+    let num1 = 40
+    let num2 = 25
+    let num3 = 5
+    let num4 = 15
+    let num5 = 30
+    let num6 = [40,5,14,12,20,122]
+
+    console.log('======== Reponse 5 ===========')
+
+    console.log(z)
+    console.log(typeof z)
+    console.log(isNaN(z))
+    console.log(typeof w)
+    console.log(w)
+    console.log(isNaN(w))
+    console.log(Math.min(num1,num2,num3,num4))
+    console.log(Math.max(num1,num2,num3,num4))
+    console.log('===============================')
+
+    //Boolean 
+    console.log('============ Boolean ==========')
+    let xi = 1
+    let yi = NaN
+    let zi = 'from js'
+
+    console.log(Boolean(xi))
+    console.log(Boolean(xi) == false)
+    console.log(Boolean(yi))
+    console.log(Boolean(zi))
+    console.log('===============================')
     //Variables
     let first = 10
     let second = 4
